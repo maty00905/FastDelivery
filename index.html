@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fast Delivery - Presentación</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Fast Delivery</h1>
+      <p>Proyecto de plataforma de delivery — Presentación</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="integracion" class="card">
+      <h2>1. Integración del Proyecto</h2>
+      <h3>Propósito</h3>
+      <p>Desarrollar una plataforma digital moderna que optimice tiempos y experiencia en envíos a domicilio.</p>
+
+      <h3>Objetivo general</h3>
+      <p>Diseñar, desarrollar e implementar la plataforma Fast Delivery para gestionar pedidos, comercios y repartidores.</p>
+
+      <h3>Justificación</h3>
+      <p>Alta demanda de servicios de delivery; digitalizar comercios y ofrecer experiencia competitiva.</p>
+
+      <h3>Alcance inicial</h3>
+      <p>Análisis, diseño UI/UX, desarrollo del prototipo, pruebas, entrega. Sin integraciones avanzadas en la versión inicial.</p>
+
+      <h3>Recursos y duración</h3>
+      <p>Equipo: coordinador, analista, diseñador, 2 devs, tester. Duración estimada: 12 semanas.</p>
+    </section>
+
+    <section id="alcance" class="card">
+      <h2>2. Declaración de Alcance</h2>
+      <h3>Objetivo del producto</h3>
+      <p>Permitir realizar pedidos, seguimiento en tiempo real y gestión de comercios y repartidores.</p>
+
+      <h3>Requisitos funcionales</h3>
+      <ul>
+        <li>Registro / Login</li>
+        <li>Catálogo y carrito</li>
+        <li>Generación y seguimiento de pedidos</li>
+        <li>Panel para comercios y repartidores</li>
+      </ul>
+
+      <h3>Entregables</h3>
+      <p>Documento de análisis, prototipo, base de datos, código fuente, informe de pruebas, manuales.</p>
+    </section>
+
+    <section id="costos" class="card">
+      <h2>3. Gestión de Costos</h2>
+      <p>Planificar, estimar y controlar costos. Estimaciones por fase y control semanal de desviaciones.</p>
+    </section>
+
+    <section id="tiempo" class="card">
+      <h2>4. Gestión del Tiempo</h2>
+      <p>Cronograma: Análisis 2s / Diseño 3s / Desarrollo 6s / Pruebas 2s. Uso de Gantt y reportes semanales.</p>
+    </section>
+
+    <section id="calidad" class="card">
+      <h2>5. Gestión de la Calidad</h2>
+      <p>Pruebas unitarias, integración, carga y accesibilidad. Criterios: sin errores críticos, rendimiento adecuado.</p>
+    </section>
+
+    <section id="cierre" class="card">
+      <h2>6. Cierre del Proyecto</h2>
+      <p>Revisión de entregables, lecciones aprendidas, capacitación y transferencia de conocimiento.</p>
+    </section>
+
+    <section id="contacto" class="card">
+      <h2>Contacto / Feedback</h2>
+      <p>Dejanos tu mensaje y lo guardamos (opcional) en Firestore.</p>
+
+      <form id="contactForm">
+        <label>Nombre</label>
+        <input type="text" id="name" required />
+        <label>Correo</label>
+        <input type="email" id="email" required />
+        <label>Mensaje</label>
+        <textarea id="message" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="status" class="status"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Fast Delivery — Proyecto académico</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
